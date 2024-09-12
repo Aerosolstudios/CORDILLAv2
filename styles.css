@@ -27,7 +27,7 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 30%;
+    width: 100%; /* Full width to ensure it stays within bounds */
     height: 100%;
     background-image: url('White_wordmark.png'); /* Your PNG file */
     background-repeat: no-repeat;
