@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Background image */
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay with PNG image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width to ensure it stays within bounds */
+    height: 100%;
+    background-image: url('White_wordmark.png'); /* Your PNG file */
+    background-repeat: no-repeat;
+    background-size: contain; /* Make the overlay scale properly */
+    background-position: top left; /* Adjust position as needed */
+}
+
+/* Wordmark inside the overlay */
+.brand-wordmark {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .brand-wordmark {
+        top: 10px;
+        left: 10px;
+        font-size: 18px;
+    }
+}
